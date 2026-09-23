@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="description" content="Provas comentadas de concursos de PMESP e Guarda Civil Municipal, organizadas por ano e matéria, com gabarito explicado questão a questão.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Banco de Questões — Escolha sua corporação">
+<meta property="og:description" content="Provas comentadas de concursos de PMESP e Guarda Civil Municipal, organizadas por ano e matéria, com gabarito explicado questão a questão.">
+<meta property="og:image" content="https://papiroporprincipios.netlify.app/og-image.png">
+<meta property="og:url" content="https://papiroporprincipios.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Banco de Questões — Escolha sua corporação">
+<meta name="twitter:description" content="Provas comentadas de concursos de PMESP e Guarda Civil Municipal, organizadas por ano e matéria, com gabarito explicado questão a questão.">
+<meta name="twitter:image" content="https://papiroporprincipios.netlify.app/og-image.png">
+<title>Banco de Questões — Escolha sua corporação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0b1220;
+    --navy-2:#0f1c2c;
+    --blue-800:#0f3d73;
+    --blue-600:#1c63ad;
+    --blue-400:#4d94e0;
+    --amber-900:#5c3d00;
+    --amber-700:#9c6900;
+    --amber-500:#f5ab0f;
+    --amber-300:#ffcc00;
+    --font-head:'Fraunces',Georgia,serif;
+    --font-body:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:var(--font-body);
+    background:radial-gradient(ellipse at 50% -10%, #17233a 0%, var(--navy) 55%, #05080d 100%);
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  .wrap{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px 30px;
+  }
+  .masthead{
+    text-align:center;
+    max-width:720px;
+    margin-bottom:34px;
+  }
+  .masthead .eyebrow{
+    display:inline-block;
+    font-size:.72rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:#9fb3c8;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  .masthead h1{
+    font-family:var(--font-head);
+    font-weight:900;
+    font-size:clamp(1.9rem, 5vw, 2.9rem);
+    margin:0 0 10px;
+    line-height:1.1;
+    background:linear-gradient(90deg,#fff, #cfe0f5 45%, #ffe9a8);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .masthead p{
+    color:#aab8c9;
+    font-size:1.02rem;
+    margin:0;
+  }
+
+  .cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:26px;
+    width:100%;
+    max-width:1080px;
+  }
+  @media (max-width:860px){
+    .cards{grid-template-columns:1fr;}
+  }
+
+  .card{
+    position:relative;
+    border-radius:22px;
+    overflow:hidden;
+    padding:36px 30px 30px;
+    min-height:430px;
+    display:flex;
+    flex-direction:column;
+    text-decoration:none;
+    color:#fff;
+    isolation:isolate;
+    border:1px solid rgba(255,255,255,.10);
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease;
+  }
+  .card:hover{transform:translateY(-8px) scale(1.015);}
+  .card:active{transform:translateY(-3px) scale(1.005);}
+
+  .card.pmesp{
+    background:
+      radial-gradient(120% 90% at 100% 0%, rgba(77,148,224,.35), transparent 60%),
+      linear-gradient(160deg, var(--blue-800), var(--navy-2) 70%);
+  }
+  .card.pmesp:hover{box-shadow:0 24px 70px rgba(28,99,173,.45), 0 0 0 1px rgba(77,148,224,.4) inset;}
+
+  .card.gcm{
+    background:
+      radial-gradient(120% 90% at 0% 0%, rgba(255,204,0,.28), transparent 60%),
+      linear-gradient(160deg, #241a00, #120d00 70%);
+  }
+  .card.gcm:hover{box-shadow:0 24px 70px rgba(245,171,15,.45), 0 0 0 1px rgba(255,204,0,.45) inset;}
+
+  .rays{
+    position:absolute; inset:0; z-index:-1; opacity:.5;
+    background:repeating-conic-gradient(from 0deg, rgba(255,204,0,.10) 0deg 6deg, transparent 6deg 18deg);
+    animation:spin 40s linear infinite;
+    mix-blend-mode:screen;
+  }
+  .card.pmesp .rays{
+    background:repeating-conic-gradient(from 0deg, rgba(77,148,224,.10) 0deg 6deg, transparent 6deg 18deg);
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .skyline{
+    position:absolute; left:0; right:0; bottom:0; height:90px; z-index:-1;
+    opacity:.55;
+  }
+
+  .badge-wrap{
+    display:flex; align-items:center; gap:16px; margin-bottom:20px;
+  }
+  .badge-glow{
+    width:74px; height:74px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(255,255,255,.08);
+    box-shadow:0 0 0 1px rgba(255,255,255,.12), 0 0 40px 6px rgba(255,255,255,.06);
+    animation:pulse 3.2s ease-in-out infinite;
+  }
+  .card.gcm .badge-glow{box-shadow:0 0 0 1px rgba(255,204,0,.35), 0 0 44px 8px rgba(255,204,0,.28);}
+  .card.pmesp .badge-glow{box-shadow:0 0 0 1px rgba(77,148,224,.35), 0 0 44px 8px rgba(77,148,224,.28);}
+  @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.06);}}
+
+  .kicker{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.75;}
+  .corp-name{font-family:var(--font-head);font-weight:800;font-size:1.55rem;margin:2px 0 0;line-height:1.15;}
+
+  .status-pill{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size:.74rem; font-weight:700;
+    padding:5px 12px; border-radius:999px;
+    margin-bottom:18px; width:fit-content;
+  }
+  .card.pmesp .status-pill{background:rgba(77,148,224,.18); color:#bcdcff; border:1px solid rgba(77,148,224,.4);}
+  .card.gcm .status-pill{background:rgba(255,204,0,.16); color:#ffe28a; border:1px solid rgba(255,204,0,.4);}
+
+  .quote-box{
+    flex:1;
+    display:flex;
+    align-items:center;
+    min-height:86px;
+  }
+  .quote{
+    font-family:var(--font-head);
+    font-style:italic;
+    font-size:1.16rem;
+    line-height:1.45;
+    opacity:0;
+    transform:translateY(6px);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .quote.show{opacity:1;transform:translateY(0);}
+  .card.pmesp .quote{color:#e3edfb;}
+  .card.gcm .quote{color:#fff3d1;}
+
+  .cta{
+    margin-top:22px;
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    font-weight:700; font-size:.98rem;
+    padding:14px 18px;
+    border-radius:12px;
+    transition:filter .2s ease, transform .2s ease;
+  }
+  .card:hover .cta{transform:translateX(2px);}
+  .card.pmesp .cta{background:linear-gradient(90deg,var(--blue-600),var(--blue-400));color:#fff;}
+  .card.gcm .cta{background:linear-gradient(90deg,var(--amber-500),var(--amber-300));color:#241a00;}
+  .cta .arrow{transition:transform .25s ease;}
+  .card:hover .cta .arrow{transform:translateX(5px);}
+
+  .meta-row{display:flex;gap:16px;margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.6);}
+  .meta-row b{color:#fff;}
+
+  footer{
+    margin-top:34px;
+    text-align:center;
+    color:#6b7a8c;
+    font-size:.82rem;
+    max-width:600px;
+  }
+  footer .tip{
+    display:inline-flex; align-items:center; gap:6px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    padding:8px 16px;
+    border-radius:999px;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="masthead">
+    <span class="eyebrow">Preparação para concursos</span>
+    <h1>Escolha sua corporação</h1>
+    <p>Dois bancos de questões, uma mesma dedicação. Selecione abaixo para começar a estudar.</p>
+  </div>
+
+  <div class="cards">
+    <a class="card pmesp" href="banco_questoes_pmsp.html">
+      <div class="rays"></div>
+      <svg class="skyline" viewBox="0 0 600 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="40" width="40" height="50" fill="#4d94e0" opacity=".18"/>
+        <rect x="50" y="20" width="30" height="70" fill="#4d94e0" opacity=".14"/>
+        <rect x="90" y="50" width="45" height="40" fill="#4d94e0" opacity=".2"/>
+        <rect x="145" y="30" width="26" height="60" fill="#4d94e0" opacity=".16"/>
+        <rect x="480" y="35" width="30" height="55" fill="#4d94e0" opacity=".16"/>
+        <rect x="520" y="15" width="35" height="75" fill="#4d94e0" opacity=".2"/>
+        <rect x="560" y="45" width="30" height="45" fill="#4d94e0" opacity=".14"/>
+      </svg>
+
+      <div class="badge-wrap">
+        <div class="badge-glow">
+          <svg width="42" height="42" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M32 3 L58 12 V30 C58 46 47 56 32 61 C17 56 6 46 6 30 V12 Z" fill="#0f3d73" stroke="#4d94e0" stroke-width="2.5"/>
+            <path d="M32 8 L53 15.5 V29.5 C53 43 44 51.5 32 55.8 C20 51.5 11 43 11 29.5 V15.5 Z" fill="#14508f"/>
+            <path d="M32 18 L35.3 27.3 L45 27.6 L37.3 33.7 L40 43 L32 37.3 L24 43 L26.7 33.7 L19 27.6 L28.7 27.3 Z" fill="#fff"/>
+          </svg>
+        </div>
+        <div>
+          <div class="kicker">Estado de São Paulo</div>
+          <div class="corp-name">Polícia Militar — Soldado</div>
+        </div>
+      </div>
+
+      <span class="status-pill">✔ 360 questões com gabarito comentado</span>
+
+      <div class="quote-box">
+        <div class="quote show" data-quotes="pmesp">"A disciplina de hoje é a farda de amanhã."</div>
+      </div>
+
+      <div class="meta-row">
+        <span><b>6</b> anos de prova</span>
+        <span><b>7</b> matérias</span>
+        <span><b>2019–2025</b></span>
+      </div>
+
+      <div class="cta">
+        <span>Acessar banco de questões PMESP</span>
+        <span class="arrow">→</span>
+      </div>
+    </a>
+
+    <a class="card gcm" href="banco_questoes_gcm.html">
+      <div class="rays"></div>
+      <svg class="skyline" viewBox="0 0 600 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="40" width="40" height="50" fill="#ffcc00" opacity=".14"/>
+        <rect x="50" y="20" width="30" height="70" fill="#ffcc00" opacity=".10"/>
+        <rect x="90" y="50" width="45" height="40" fill="#ffcc00" opacity=".16"/>
+        <rect x="145" y="30" width="26" height="60" fill="#ffcc00" opacity=".12"/>
+        <rect x="480" y="35" width="30" height="55" fill="#ffcc00" opacity=".12"/>
+        <rect x="520" y="15" width="35" height="75" fill="#ffcc00" opacity=".16"/>
+        <rect x="560" y="45" width="30" height="45" fill="#ffcc00" opacity=".10"/>
+      </svg>
+
+      <div class="badge-wrap">
+        <div class="badge-glow">
+          <svg width="42" height="42" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M32 3 L58 12 V30 C58 46 47 56 32 61 C17 56 6 46 6 30 V12 Z" fill="#1a1400" stroke="#ffcc00" stroke-width="2.5"/>
+            <path d="M32 8 L53 15.5 V29.5 C53 43 44 51.5 32 55.8 C20 51.5 11 43 11 29.5 V15.5 Z" fill="#ffcc00"/>
+            <path d="M32 18 L35.3 27.3 L45 27.6 L37.3 33.7 L40 43 L32 37.3 L24 43 L26.7 33.7 L19 27.6 L28.7 27.3 Z" fill="#1a1400"/>
+          </svg>
+        </div>
+        <div>
+          <div class="kicker">Guarda Municipal</div>
+          <div class="corp-name">Guarda Civil Municipal</div>
+        </div>
+      </div>
+
+      <span class="status-pill">✔ 268 questões com gabarito comentado</span>
+
+      <div class="quote-box">
+        <div class="quote show" data-quotes="gcm">"Cuidar da cidade é cuidar de quem você ama."</div>
+      </div>
+
+      <div class="meta-row">
+        <span><b>6</b> concursos</span>
+        <span><b>8</b> matérias</span>
+        <span><b>2023–2026</b></span>
+      </div>
+
+      <div class="cta">
+        <span>Acessar banco de questões GCM</span>
+        <span class="arrow">→</span>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    <span class="tip">🔁 &nbsp;Você pode alternar entre as versões a qualquer momento pelo botão no topo de cada banco de questões</span>
+  </footer>
+</div>
+
+<script>
+const QUOTES = {
+  pmesp: [
+    "A disciplina de hoje é a farda de amanhã.",
+    "Cada questão resolvida é um passo mais perto da aprovação.",
+    "Servir e proteger começa nos estudos.",
+    "Onde a dedicação é rotina, a aprovação é consequência.",
+    "Não é sobre ter tempo, é sobre fazer o tempo valer.",
+  ],
+  gcm: [
+    "Cuidar da cidade é cuidar de quem você ama.",
+    "A farda amarela também se conquista com estudo.",
+    "Todo dia de estudo é um degrau até a aprovação.",
+    "Proteger a comunidade começa com preparo.",
+    "Sua dedicação de hoje é a cidade mais segura de amanhã.",
+  ]
+};
+
+function cycleQuotes(key){
+  const el = document.querySelector(`.quote[data-quotes="${key}"]`);
+  if(!el) return;
+  let i = 0;
+  setInterval(()=>{
+    i = (i+1) % QUOTES[key].length;
+    el.classList.remove('show');
+    setTimeout(()=>{
+      el.textContent = QUOTES[key][i];
+      el.classList.add('show');
+    }, 400);
+  }, 4200);
+}
+cycleQuotes('pmesp');
+cycleQuotes('gcm');
+</script>
+
+</body>
+</html>
