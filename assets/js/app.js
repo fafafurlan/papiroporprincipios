@@ -597,12 +597,13 @@ function renderCard(){
     lock(a, true);
     renderProgress();
     renderPager();
+    renderFilters();
   }
   function redo(){
     if(!locked) return;
     if(session){ delete session.done[q.id]; }
     else { delete answers[q.id]; LS.set('answers', answers); saveSummary(); }
-    renderCard(); renderProgress(); renderPager(); renderSessionBanner();
+    renderCard(); renderProgress(); renderPager(); renderSessionBanner(); renderFilters();
     const first = $('.option', box); if(first) first.focus({preventScroll:true});
   }
   function star(){

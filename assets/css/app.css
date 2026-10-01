@@ -364,7 +364,7 @@ html[data-theme="dark"] .session-banner{border-color:color-mix(in srgb, var(--br
   background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--brand-500);
   border-radius:10px;padding:14px 18px;margin-bottom:16px;
   font-size:.92rem;line-height:1.75;color:var(--text);
-  max-height:420px;overflow:auto;
+  overflow-x:auto;
 }
 .context p{margin:0 0 10px;}
 .context p:last-child{margin-bottom:0;}
