@@ -199,7 +199,7 @@ function updateStreak(ok){
 
 /* ---------- Layout ---------- */
 function brandMark(){
-  return C.logo.svg ? C.logo.svg : '<img src="' + C.logo.img + '" alt="" width="40" height="40">';
+  return C.logo.svg ? C.logo.svg : '<img src="' + C.logo.img + '" alt="Brasão">';
 }
 function buildLayout(){
   const app = document.getElementById('app');
@@ -208,7 +208,7 @@ function buildLayout(){
   <header class="appbar">
     <div class="appbar-inner">
       <a class="brand" href="index.html" title="Voltar para o início">
-        <span class="brand-mark">${brandMark()}</span>
+        <span class="brand-mark${C.logo.img ? ' emblem' : ''}">${brandMark()}</span>
         <span class="brand-text">
           <span class="brand-title">${esc(C.name)}</span>
           <span class="brand-sub">${esc(C.subtitle)}</span>

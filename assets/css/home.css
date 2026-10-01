@@ -71,6 +71,8 @@ html[data-theme="dark"] .bank.gcm{--accent-ink:#ffcf5c;}
 .bank-top{display:flex;align-items:center;gap:16px;}
 .bank-logo{width:60px;height:60px;border-radius:16px;overflow:hidden;flex-shrink:0;background:#0b1220;box-shadow:0 0 0 1px color-mix(in srgb, var(--accent) 50%, transparent), 0 10px 24px -10px var(--accent);}
 .bank-logo img,.bank-logo svg{width:100%;height:100%;display:block;}
+.bank-logo.emblem{width:72px;height:72px;background:#fff;padding:5px;box-shadow:0 0 0 1px var(--border), 0 10px 24px -12px var(--accent);}
+.bank-logo.emblem img{object-fit:contain;}
 .kicker{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);}
 .bank h3{font-family:var(--font-head);font-size:1.35rem;letter-spacing:-.01em;margin:2px 0 0;}
 .bank-desc{color:var(--text-2);margin:0;font-size:.94rem;}

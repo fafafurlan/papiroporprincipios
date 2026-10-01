@@ -202,6 +202,9 @@ html[data-bank="gcm"] .btn-primary:hover:not(:disabled){background:var(--brand-5
   box-shadow:0 0 0 1px color-mix(in srgb, var(--brand-500) 40%, transparent), 0 4px 10px -2px color-mix(in srgb, var(--brand-700) 50%, transparent);
 }
 .brand-mark img,.brand-mark svg{width:100%;height:100%;display:block;}
+/* brasões oficiais: fundo branco para manter as cores e os traços pretos legíveis */
+.brand-mark.emblem{width:44px;height:44px;background:#fff;padding:3px;border-radius:12px;box-shadow:0 0 0 1px var(--border), var(--shadow-sm);}
+.brand-mark.emblem img{object-fit:contain;}
 .brand-text{min-width:0;display:flex;flex-direction:column;}
 .brand-title{font-family:var(--font-head);font-weight:800;font-size:1.02rem;letter-spacing:-.01em;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .brand-sub{font-size:.76rem;color:var(--text-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
