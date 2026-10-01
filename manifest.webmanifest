@@ -1,0 +1,21 @@
+{
+  "name": "Papiro por Princípios — Banco de Questões",
+  "short_name": "Papiro",
+  "description": "Provas comentadas de concursos de PMESP e Guarda Civil Municipal, com gabarito explicado questão a questão.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b111b",
+  "theme_color": "#0b111b",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "PMESP — Soldado", "url": "./banco_questoes_pmsp.html", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Guarda Civil Municipal", "url": "./banco_questoes_gcm.html", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
