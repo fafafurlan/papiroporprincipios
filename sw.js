@@ -1,7 +1,7 @@
 /* Service worker — permite usar o site sem internet.
    Páginas, scripts e questões: busca na rede primeiro (sempre atualizado) e
    usa a cópia salva quando estiver offline. Imagens e fontes: usa a cópia salva. */
-const CACHE = 'qb-core-v1';
+const CACHE = 'qb-core-v2';
 const MEDIA = 'qb-media-v1';
 const CORE = [
   './',
